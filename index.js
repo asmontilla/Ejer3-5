@@ -30,15 +30,13 @@ var JSON = {
     ]
 }
 
-// var tojson=JSON.parse(JSON.submenu)
+//JSON.parse(JSON.submenu)
 
 function subjs() {
     for (let i = 0; i < JSON.submenu.length; i++) {
         console.log(JSON.submenu[i].titulo)
+        // solo logro ver el menu en consola :(
         pro.innerHTML = JSON.submenu[i].titulo
-
-    
-
     }
 
 }
