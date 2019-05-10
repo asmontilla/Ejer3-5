@@ -1,6 +1,7 @@
 const comp = document.getElementById("comp");
 const nos = document.getElementById("change");
 const pro = document.getElementById("pro");
+const nav= document.getElementsByClassName("navigation")
 
 comp.addEventListener("mouseover", changeColor);
 comp.addEventListener("mouseout", colorIni)
@@ -35,8 +36,11 @@ var JSON = {
 function subjs() {
     for (let i = 0; i < JSON.submenu.length; i++) {
         console.log(JSON.submenu[i].titulo)
-        // solo logro ver el menu en consola :(
-        pro.innerHTML = JSON.submenu[i].titulo
+        let value=JSON.submenu[i].titulo
+    
+         let menu= document.createElement("li")
+        nos.appendChild (menu) 
+        menu.innerHTML=value
     }
 
 }
