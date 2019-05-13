@@ -1,7 +1,7 @@
 const comp = document.getElementById("comp");
 const nos = document.getElementById("change");
 const pro = document.getElementById("pro");
-const nav= document.getElementsByClassName("navigation")
+// const nav= document.getElementsByClassName("navigation")
 
 comp.addEventListener("mouseover", changeColor);
 comp.addEventListener("mouseout", colorIni)
@@ -17,7 +17,9 @@ function colorIni() {
 }
 
 function saludo() {
-    nos.innerHTML = "Hola Mundo!!!"
+    let saludo= document.createElement("p")
+    nos.appendChild(saludo)
+    saludo.innerHTML = "Hola Mundo!!!"
 }
 
 
@@ -39,7 +41,7 @@ function subjs() {
         let value=JSON.submenu[i].titulo
     
          let menu= document.createElement("li")
-        nos.appendChild (menu) 
+        pro.appendChild (menu) 
         menu.innerHTML=value
     }
 
